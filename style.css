@@ -366,9 +366,17 @@ span {
 }
 
 .project-card img {
-  height: 220px;
-  object-fit: cover;
   width: 100%;
+  aspect-ratio: 16 / 9; 
+  object-fit: cover;    
+  object-position: center;
+  display: block;
+}
+
+.project-card img.fit-contain {
+  object-fit: contain;
+  padding: 20px;        
+  background: #0b0b0b;  
 }
 
 .project-body {
