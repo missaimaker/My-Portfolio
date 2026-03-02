@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio of Medhawi Niroula - aspiring software engineer, cybersecurity enthusiast, and AI explorer."
+    />
+    <title>Medhawi's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header" id="top">
+      <a href="#top" class="logo" aria-label="Medhawi Niroula home">
+        Medhawi <span>Niroula</span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false">
+        <i class="bx bx-menu" aria-hidden="true"></i>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav class="navbar" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="gradient-btn" href="#contact">Contact Me</a>
+    </header>
+
+    <main>
+      <section class="home" id="home">
+        <div class="home-content">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Medhawi Niroula</h1>
+          <p class="tagline">
+            A Software Engineer in the making, cybersecurity enthusiast, and AI
+            explorer
+          </p>
+          <p class="intro">
+            I love experimenting, breaking things, fixing them, and building
+            something better. Explore my projects to see how I combine
+            creativity, security, and engineering into impactful tech.
+          </p>
+
+          <div class="social-icons" aria-label="Social media">
+            <a href="https://github.com/missaimaker" aria-label="GitHub"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/medhawi-niroula/"
+              aria-label="LinkedIn"
+              ><i class="bx bxl-linkedin-square"></i
+            ></a>
+            <a href="https://www.instagram.com/medhawii1/" aria-label="Instagram"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="https://x.com/nmedhawi" aria-label="Twitter"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+          </div>
+
+          <div class="btn-group">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="home-img">
+          <img src="image.jpeg" alt="Portrait of Medhawi Niroula" />
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-img">
+          <img src="image2.jpg" alt="Medhawi working on a laptop" />
+        </div>
+
+        <div class="about-content">
+          <h2>About <span>Me</span></h2>
+          <p>
+            I'm Medhawi Niroula, a Computer Science student at Texas Tech
+            University with a deep interest in cybersecurity, software
+            engineering, and machine learning. I enjoy exploring how technology
+            can be used to solve real-world problems.
+          </p>
+          <p>
+            I stay involved in tech communities, hackathons, and student
+            organizations that help me grow as a leader and collaborator.
+          </p>
+          <a href="#projects" class="btn">Explore My Work</a>
+        </div>
+      </section>
+
+      <!-- SERVICES SECTION WITH CAROUSEL -->
+      <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+
+        <!-- ARROWS -->
+        <div class="carousel-controls">
+          <button class="carousel-btn left" id="services-left">
+            <i class="bx bx-chevron-left"></i>
+          </button>
+          <button class="carousel-btn right" id="services-right">
+            <i class="bx bx-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="services-container">
+          <article class="service-box">
+            <div class="service-info">
+              <i class="bx bxl-figma"></i>
+              <h3>UI / UX Design</h3>
+              <p>Clean, accessible interfaces that prioritize user journeys.</p>
+            </div>
+          </article>
+
+          <article class="service-box">
+            <div class="service-info">
+              <i class="bx bx-code"></i>
+              <h3>Frontend Development</h3>
+              <p>Responsive modern JavaScript and component-driven apps.</p>
+            </div>
+          </article>
+
+          <article class="service-box">
+            <div class="service-info">
+              <i class="bx bx-code-curly"></i>
+              <h3>Backend Development</h3>
+              <p>Secure, scalable APIs with clear documentation.</p>
+            </div>
+          </article>
+
+          <article class="service-box">
+            <div class="service-info">
+              <i class="bx bx-code-alt"></i>
+              <h3>Cybersecurity</h3>
+              <p>Securing applications and data with industry best practices.</p>
+            </div>
+          </article>
+
+          <article class="service-box">
+            <div class="service-info">
+              <i class="bx bx-brain"></i>
+              <h3>Machine Learning</h3>
+              <p>
+                Building smart models for predictions and data-driven insights.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION WITH CAROUSEL -->
+      <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+
+        <!-- ARROWS -->
+        <div class="carousel-controls">
+          <button class="carousel-btn left" id="projects-left">
+            <i class="bx bx-chevron-left"></i>
+          </button>
+          <button class="carousel-btn right" id="projects-right">
+            <i class="bx bx-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <img src="project1.png" alt="Movie Booking system" />
+            <div class="project-body">
+              <h3>Movie Booking System</h3>
+              <p>
+                A clean, efficient platform for browsing movies and booking
+                seats.
+              </p>
+              <a
+                class="btn"
+                href="https://github.com/missaimaker/MBS_SWE_Project"
+                target="_blank"
+                >Read More</a
+              >
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="project2.png" alt="Multicloud scheduler" />
+            <div class="project-body">
+              <h3>Task Scheduling for Multi-Cloud Computing</h3>
+              <p>
+                Implements MMA & EA-MMA algorithms to optimize cost, time &
+                energy.
+              </p>
+              <a
+                class="btn"
+                href="https://github.com/missaimaker/Task-Scheduling-for-Multi-Cloud-Computing"
+                target="_blank"
+                >Read More</a
+              >
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="project3.png" alt="Document classifier" />
+            <div class="project-body">
+              <h3>AI Document Classifier</h3>
+              <p>
+                Classifies multi-page, multi-modal documents with evidence
+                tracing.
+              </p>
+              <a
+                class="btn"
+                href="https://github.com/missaimaker/doc-classifier"
+                target="_blank"
+                >Read More</a
+              >
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="project4.png" alt="AlgoNavigator" />
+            <div class="project-body">
+              <h3>AlgoNavigator</h3>
+              <p>
+                Visualizes algorithms step-by-step with interactive animations.
+              </p>
+              <a
+                class="btn"
+                href="https://github.com/missaimaker/AlgoNavigator"
+                target="_blank"
+                >Read More</a
+              >
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="project5.png" alt="Portfolio" />
+            <div class="project-body">
+              <h3>Personal Portfolio</h3>
+              <p>A modern, responsive portfolio showcasing my work & skills.</p>
+              <a
+                class="btn"
+                href="https://github.com/missaimaker/My-Portfolio"
+                target="_blank"
+                >Read More</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <div class="contact-container">
+          <form class="contact-form" action="#" method="post">
+            <div class="input-group">
+              <label class="input-box">
+                <span class="label-text">Full Name</span>
+                <input type="text" name="name" required />
+              </label>
+              <label class="input-box">
+                <span class="label-text">Email Address</span>
+                <input type="email" name="email" required />
+              </label>
+            </div>
+
+            <div class="input-group">
+              <label class="input-box">
+                <span class="label-text">Phone Number</span>
+                <input type="tel" name="phone" />
+              </label>
+              <label class="input-box">
+                <span class="label-text">Subject</span>
+                <input type="text" name="subject" />
+              </label>
+            </div>
+
+            <label class="input-box">
+              <span class="label-text">Your Message</span>
+              <textarea
+                name="message"
+                rows="5"
+                required
+                placeholder="Share a challenge you'd like to collaborate on"
+              ></textarea>
+            </label>
+
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="social-icons" aria-label="Footer social media">
+          <a href="https://github.com/missaimaker" aria-label="GitHub"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/medhawi-niroula/"
+            aria-label="LinkedIn"
+            ><i class="bx bxl-linkedin-square"></i
+          ></a>
+          <a href="https://www.instagram.com/medhawii1/" aria-label="Instagram"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="https://x.com/nmedhawi" aria-label="Twitter"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <p class="copyright">
+        © <span id="current-year"></span> Medhawi Niroula. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
