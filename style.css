@@ -358,6 +358,7 @@ span {
   flex-direction: column;
   overflow: hidden;
   transition: transform var(--transition), box-shadow var(--transition);
+  height: 100%;
 }
 
 .project-card:hover {
@@ -365,18 +366,20 @@ span {
   transform: translateY(-8px);
 }
 
+/* Normalized image area for consistent card appearance */
 .project-card img {
   width: 100%;
-  aspect-ratio: 16 / 9; 
-  object-fit: cover;    
+  height: clamp(180px, 22vw, 240px);
+  object-fit: cover;
   object-position: center;
   display: block;
+  background: #0b0b0b;
 }
 
+/* Use this class on specific images if you want to avoid cropping */
 .project-card img.fit-contain {
   object-fit: contain;
-  padding: 20px;        
-  background: #0b0b0b;  
+  padding: 1.2rem;
 }
 
 .project-body {
@@ -384,6 +387,7 @@ span {
   flex-direction: column;
   gap: 1.6rem;
   padding: 2.4rem;
+  flex: 1;
 }
 
 .project-body h3 {
@@ -550,6 +554,10 @@ footer {
   .btn-group {
     justify-content: center;
   }
+
+  .project-card img {
+    height: 190px;
+  }
 }
 
 /* =========================================
@@ -589,6 +597,7 @@ footer {
   gap: 2.4rem;
   scroll-behavior: smooth;
   padding-bottom: 1rem;
+  align-items: stretch;
 }
 
 /* Hide scrollbar visually */
@@ -597,10 +606,10 @@ footer {
   height: 0;
 }
 
-/* Cards must stay same width in horizontal scroll mode */
+/* Cards stay consistent width in horizontal scroll mode */
 .service-box,
 .project-card {
-  min-width: 280px;
+  flex: 0 0 clamp(280px, 32vw, 360px);
 }
 
 /* Infinite Carousel Scroll */
